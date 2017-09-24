@@ -1,0 +1,97 @@
+/* ***************************
+        ASSETS
+*************************** */
+
+@import "assets/_colors.scss";
+
+/* ***************************
+        BANNER
+*************************** */
+
+.banner {
+    .mobile-logo {
+        display: none;
+    }
+    .desktop-logo {
+        display: block;
+        width: 75%;
+    }
+}
+
+/* ***************************
+        MAIN
+*************************** */
+
+main {
+    margin: 60px 40px;
+}
+
+/* ***************************
+        BLOG POSTS
+*************************** */
+
+.post {
+    flex-direction: row;
+    background-color: #fff;
+    margin-bottom: 80px;
+    .post-img {
+        flex: 1.5;
+        img {
+            width: 100%;
+        }
+    }
+    .post-text {
+        @include flex(1);
+        padding: 40px;
+    }
+}
+
+/* ***************************
+        COMMENTS
+*************************** */
+
+.comment {
+    padding: 40px 40px 40px 40px;
+    .comment-fa > i.fa-user-circle {
+        font-size: 2.8em;
+  }
+}
+
+/* ***************************
+        VIEW/EDIT POSTS
+*************************** */
+
+.list > .flex-list {
+    @include flex-direction(row);
+}
+.create-date {
+    padding: 0;
+}
+
+/* ***************************
+        ABOUT ME
+*************************** */
+
+.about-main {
+    section {
+        padding: 20px 20px 40px 20px;
+        h1 {
+            padding: 0;
+        }
+        img {
+            float: left;
+            margin: 20px 20px 20px 0;
+            width: 40%;
+        }
+        p {
+            line-height: 1.5em;
+            margin-top:25px;
+            padding: 0;
+            width: 95%;
+        }
+        .email {
+            clear: both;
+            padding: 0;
+        }
+    }
+}
